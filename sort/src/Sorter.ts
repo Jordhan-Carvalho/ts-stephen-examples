@@ -1,4 +1,5 @@
 export abstract class Sorter {
+  //When using abstract you can write what method expect
   abstract length: number;
   abstract compare(leftIndex: number, rightIndex: number): boolean;
   abstract swap(leftIndex: number, rightIndex: number): void;

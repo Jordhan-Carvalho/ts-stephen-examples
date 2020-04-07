@@ -22,11 +22,15 @@ let car: Car = new Car();
 //Object literal
 let point: { x: number; y: number } = {
   x: 10,
-  y: 20
+  y: 20,
 };
 
 // Function variable
-const logNumber: (i: number) => void = i => {
+const logNumber: (i: number) => void = (i) => {
+  console.log(i);
+};
+// Same thing
+const logNumber2 = (i: number): void => {
   console.log(i);
 };
 
