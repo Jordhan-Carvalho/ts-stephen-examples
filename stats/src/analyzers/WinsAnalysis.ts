@@ -5,6 +5,8 @@ import { MatchResult } from "../MatchResult";
 export class WinsAnalysis implements Analyzer {
   constructor(public teamName: string) {}
 
+  name = "wins";
+
   run(matches: MatchData[]): string {
     let wins = 0;
 
