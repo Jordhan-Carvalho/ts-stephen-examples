@@ -6,3 +6,7 @@ maps/.cache
 fetchjson/node_modules/
 sort/node_modules
 sort/build
+**/node_modules
+**/build
+**/dist
+**/.cache

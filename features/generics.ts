@@ -69,11 +69,13 @@ interface Printable {
   print(): void;
 }
 
+// with extends we say thata whatever the type we pass will have the .print, will have to satify the interface
 function printHousesOrCars<T extends Printable>(arr: T[]): void {
   for (let eachArr of arr) {
     eachArr.print();
   }
 }
 
+printHousesOrCars([1, 2]);
 printHousesOrCars<Car>([new House(), new Car()]);
 printHousesOrCars([new House(), new Car()]);
